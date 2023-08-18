@@ -1,0 +1,16 @@
+# ADB
+ro.adb.secure=0
+ro.boot.dynamic_partitions=true
+
+# USB
+ro.sys.usb.storage.type=mtp
+
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
+# TEE
+ro.vendor.mtk_tee_gp_support=1
+ro.vendor.mtk_microtrust_tee_support=1
+
+# Gatekeeper
+ro.hardware.gatekeeper=beanpod

@@ -1,0 +1,50 @@
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+# mount point       fstype    device                                                                flags
+
+/data               ext4     /dev/block/by-name/userdata                     flags=display="Data";fileencryption=aes-256-xts:aes-256-cts:v1
+/cache              ext4     /dev/block/by-name/cache                        flags=display="Cache";backup=1;wipeingui;wipeduringfactoryreset
+/storage            ext4     /data/media/0                                   flags=display="Internal Storage";backup=1;usermrf;fsflags="bind";removable
+
+# super
+/system             ext4     /dev/block/mapper/system                        flags=display="System";backup=0;logical
+/vendor             ext4     /dev/block/mapper/vendor                        flags=display="Vendor";logical
+/product            ext4     /dev/block/mapper/product                       flags=display="Product";logical
+
+# Boot
+/boot               emmc     /dev/block/by-name/boot                         flags=display="Boot";backup=1;flashimg=1
+/dtbo               emmc     /dev/block/by-name/dtbo                         flags=display="Dtbo"
+/recovery           emmc     /dev/block/by-name/recovery                     flags=display="Recovery";backup=1;flashimg=1
+/vbmeta             emmc     /dev/block/by-name/vbmeta                       flags=display="VBMeta";flashimg=1
+/vbmeta_system      emmc     /dev/block/by-name/vbmeta_system                flags=display="VBMeta System";flashimg=1
+/vbmeta_vendor      emmc     /dev/block/by-name/vbmeta_vendor                flags=display="VBMeta Vendor";flashimg=1
+/bootloader         emmc     /dev/block/by-name/lk                           flags=display="Bootloader"
+/bootloader2        emmc     /dev/block/by-name/lk2                          flags=display="Bootloader2"
+
+# Persistent Firmware & Properties
+/cust               ext4     /dev/block/platform/bootdevice/by-name/cust     flags=display="Cust"
+/cust_image         emmc     /dev/block/platform/bootdevice/by-name/cust     flags=display="Cust";backup=1
+/persist            ext4     /dev/block/by-name/persist                      flags=display="Persist"
+/persist_image      emmc     /dev/block/by-name/persist                      flags=display="Persist";backup=1
+
+# Firmware partitions
+/metadata           ext4     /dev/block/by-name/metadata                     flags=display="Metadata";backup=1
+/protect_f          ext4     /dev/block/by-name/protect1                     flags=display="Protect_f";backup=1
+/protect_s          ext4     /dev/block/by-name/protect2                     flags=display="Protect_s";backup=1
+/nvdata             ext4     /dev/block/by-name/nvdata                       flags=display="Nvdata";backup=1
+/nvcfg              ext4     /dev/block/by-name/nvcfg                        flags=display="Nvcfg";backup=1
+/nvram              emmc     /dev/block/by-name/nvram                        flags=display="Nvram"
+/proinfo            emmc     /dev/block/by-name/proinfo                      flags=display="Proinfo"
+/logo               emmc     /dev/block/by-name/logo                         flags=display="Logo"
+/tee1               emmc     /dev/block/by-name/tee1                         flags=display="Trustzone1"
+/tee2               emmc     /dev/block/by-name/tee2                         flags=display="Trustzone2"
+
+/para               emmc     /dev/block/by-name/para                         flags=display="Para"
+/misc               emmc     /dev/block/by-name/misc                         flags=display="Misc"
+/persistent         emmc     /dev/block/by-name/frp                          flags=display="Persistent"
+
+# External Storage
+/sdcard1            vfat     /dev/block/mmcblk0p1     /dev/block/mmcblk0     flags=display="MicroSD Card";storage;wipeingui;removable;fsflags="utf8"
+/usb_otg            auto     /dev/block/sdd1          /dev/block/sdd4        flags=display="USB-Storage";storage;wipeingui;removable;fsflags="utf8"

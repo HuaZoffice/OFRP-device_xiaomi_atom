@@ -1,0 +1,48 @@
+import /init.recovery.teei_daemon.rc
+
+on init
+    # Create a more standard /dev/block layout for our scripts
+    symlink /dev/block/platform/bootdevice /dev/block/bootdevice
+    mkdir /mnt/vendor/persist 0700 root root
+    mount ext4 /dev/block/platform/bootdevice/by-name/persist /mnt/vendor/persist
+    export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw
+
+on fs
+    install_keyring
+
+on post-fs
+    chown system system /sys/bus/i2c/drivers/aw8624_haptic/6-005a/f0_save
+    chown system system /sys/bus/i2c/drivers/aw8624_haptic/6-005a/osc_save
+    chown system system /sys/bus/i2c/drivers/aw8624_haptic/6-005a/custom_wave
+    chmod 0666  /sys/bus/i2c/drivers/aw8624_haptic/6-005a/custom_wave
+    start boot-hal-1-1
+
+on boot
+    start health-hal-2-1
+    start vendor.mtk.vibrator-1-2
+    setprop sys.usb.config adb
+
+on property:vendor.sys.listeners.registered=true
+    start keymaster-4-1
+    start gatekeeper-1-0
+
+service keymaster-4-1 /vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
+    interface android.hardware.keymaster@4.0::IKeymasterDevice default
+    interface android.hardware.keymaster@4.1::IKeymasterDevice default
+    user root
+    group root drmrpc
+    disabled
+    seclabel u:r:recovery:s0
+
+service gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
+    interface android.hardware.gatekeeper@1.0::IGatekeeper default
+    user root
+    group root
+    disabled
+    seclabel u:r:recovery:s0
+
+service vendor.mtk.vibrator-1-2 /vendor/bin/hw/vendor.mtk.hardware.vibrator@1.2-service
+    class hal
+    user root
+    group root
+    seclabel u:r:recovery:s0
