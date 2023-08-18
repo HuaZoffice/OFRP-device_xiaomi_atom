@@ -1,7 +1,7 @@
 # OFRP-device_xiaomi_atom
 ## 橙 狐 (OFRP) for Redmi 10X 5G (atom)
 ![OFRP](https://image.ibb.co/cTMWux/logo.jpg "OFRP")
-![LOGO](https://ibb.co/02TtyhF)
+![LOGO](https://i.ibb.co/wgVshMw/logo.jpg)
 ### 专门为红米10X5G版做的橙狐rec，仅支持10X5G，
 ### 10Xpro请使用ymdzq老哥做的ofrp：
 [![](https://img.shields.io/badge/ymdzq-ofrp-bomb-green)](https://github.com/ymdzq/OFRP-device_xiaomi_bomb)
@@ -11,4 +11,4 @@
 ## 捐赠
 - 如果你喜欢这个项目的话，请给我捐赠，谢谢。
 - If you like this project, please donate to me, thanks.
-![](https://ibb.co/qgfR5dh)
+![](https://i.ibb.co/HPsrdVR/juanzeng.png)
