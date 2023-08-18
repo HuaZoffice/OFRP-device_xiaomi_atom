@@ -9,6 +9,6 @@
 [![](https://img.shields.io/badge/ymdzq的主页-blue)](https://github.com/ymdzq)
 
 ## 捐赠
-- 如果你喜欢这个项目的话，请给我捐赠，谢谢。
-- If you like this project, please donate to me, thanks.
+### - 如果你喜欢这个项目的话，请给我捐赠，谢谢。
+### - If you like this project, please donate to me, thanks.
 ![](https://i.ibb.co/HPsrdVR/juanzeng.png)
