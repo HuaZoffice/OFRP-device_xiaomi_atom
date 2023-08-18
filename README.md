@@ -11,4 +11,4 @@
 ## 捐赠
 - 如果你喜欢这个项目的话，请给我捐赠，谢谢。
 - If you like this project, please donate to me, thanks.
-![]([image/juanzeng.png](https://github.com/HuaZoffice/Magisk_change-your-phone-model/blob/magisk%E6%A8%A1%E5%9D%97%E5%92%8Capp/image/logo.jpg)https://github.com/HuaZoffice/Magisk_change-your-phone-model/blob/magisk%E6%A8%A1%E5%9D%97%E5%92%8Capp/image/logo.jpg)
+![](https://github.com/HuaZoffice/Magisk_change-your-phone-model/blob/magisk%E6%A8%A1%E5%9D%97%E5%92%8Capp/image/juanzeng.png)
