@@ -26,4 +26,4 @@ Github，酷安，Telegram以及我的123云盘是我的官方发布以及下载
 ## 捐赠
 #### - 如果你喜欢这个项目的话，请给我捐赠，谢谢你。
 #### - If you like this project, please donate to me, thanks.
-![](https://i.ibb.co/09X1mFs/juanzeng.jpg)
+![](https://i.ibb.co/9yKTQ8z/juanzeng.jpg)
