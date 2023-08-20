@@ -3,10 +3,10 @@
 # 橙 狐 (OFRP) for Redmi 10X 5G (atom)
 #### 这是一个为红米10X 5G版开发的OrangeFox Recovery
 
-### 仅支持10X5G!!!
-### 10X Pro请使用@ymdzq做的ofrp：
+#### 仅支持10X5G!!!
+#### 10X Pro请使用@ymdzq做的ofrp：
 [![](https://img.shields.io/badge/ymdzqOFRP-bomb-green)](https://github.com/ymdzq/OFRP-device_xiaomi_bomb)
-### 本ofrp所使用的设备树基于@ymdzq的bomb设备树修改而来，感谢@ymdzq
+#### 本ofrp所使用的设备树基于@ymdzq的bomb设备树修改而来，感谢@ymdzq
 
 ## 下载
 
