@@ -132,11 +132,12 @@
 	export OF_DEFAULT_TIMEZONE="TAIST-8;TAIDT"
 	# 跳过新版fstab处理
 	# export OF_LEGACY_PROCESS_FSTAB=1
-
-	F=$(find "device" -name "bomb")
-	# 修改启动画面背景色为#000000
+    #防止MIUI覆盖橙狐rec
+	export OF_PATCH_AVB20=1
+	F=$(find "device" -name "atom")
+	# 修改启动画面背景色为#538db6
 	\cp -fp bootable/recovery/gui/theme/portrait_hdpi/splash.xml "$F"/recovery/root/twres/splash.xml
-	sed -i 's/background color="#D34E38"/background color="#000000"/g' "$F"/recovery/root/twres/splash.xml
-	sed -i 's/fill color="#FF8038"/fill color="#000000"/g' "$F"/recovery/root/twres/splash.xml
+	sed -i 's/background color="#D34E38"/background color="#538DB6"/g' "$F"/recovery/root/twres/splash.xml
+	sed -i 's/fill color="#FF8038"/fill color="#538DB6"/g' "$F"/recovery/root/twres/splash.xml
 
 	echo -e "\x1b[96matom: 当你看到这个消息的时候，所有的OrangeFox Var已经添加完毕！\x1b[m"
