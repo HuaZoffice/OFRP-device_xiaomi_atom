@@ -23,8 +23,8 @@
 
 	<pages>
 		<page name="splash">
-			<background color="#000000"/>
-			<fill color="#000000">
+			<background color="#FFFFFF"/>
+			<fill color="#FFFFFF">
 				<placement x="0" y="0" w="1080" h="%center_y%"/>
 			</fill>
 			<image>
@@ -38,12 +38,12 @@
 
 			<text style="menu_text">
 				<placement x="540" y="%of%" placement="4"/>
-				<font resource="of" color="#ffffff"/>
-				<text>OrangeFox</text>
+				<font resource="of" color="#538db6"/>
+				<text>Kamchoyun</text>
 			</text>
 			<text style="menu_text">
 				<placement x="540" y="%rec%" placement="4"/>
-				<font resource="recovery" color="#ffffff"/>
+				<font resource="recovery" color="#538db6"/>
 				<text>Recovery</text>
 			</text>
 		</page>
