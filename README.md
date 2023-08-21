@@ -1,4 +1,5 @@
 # 橙 狐 (OFRP) for Redmi 10X 5G (atom)
+[![OrangeFox - Build](https://github.com/HuaZoffice/OrangeFox-Action-Builder-atom/actions/workflows/OrangeFox-Compile.yml/badge.svg)](https://github.com/HuaZoffice/OrangeFox-Action-Builder-atom/actions/workflows/OrangeFox-Compile.yml)
 #### 这是一个为红米10X 5G版开发的OrangeFox Recovery
 
 ![OFRP](https://image.ibb.co/cTMWux/logo.jpg "OFRP")
