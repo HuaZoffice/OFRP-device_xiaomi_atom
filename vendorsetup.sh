@@ -138,8 +138,8 @@
 	F=$(find "device" -name "atom")
 	# 修改启动画面背景色为#ffffff
 	\cp -fp bootable/recovery/gui/theme/portrait_hdpi/splash.xml "$F"/recovery/root/twres/splash.xml
-	sed -i 's/background color="#D34E38"/background color="#FFFFFF"/g' "$F"/recovery/root/twres/splash.xml
-	sed -i 's/fill color="#FF8038"/fill color="#FFFFFF"/g' "$F"/recovery/root/twres/splash.xml
+	sed -i 's/background color="#D34E38"/background color="#538db6"/g' "$F"/recovery/root/twres/splash.xml
+	sed -i 's/fill color="#FF8038"/fill color="#538db6"/g' "$F"/recovery/root/twres/splash.xml
    sed -i 's/OrangeFox/Kamchoyun/g' "$F"/recovery/root/twres/splash.xml
 	sed -i 's/font resource="of" color="#ffffff"/font resource="of" color="#538db6"/g' "$F"/recovery/root/twres/splash.xml
 	sed -i 's/font resource="recovery" color="#ffffff"/font resource="recovery" color="#538db6"/g' "$F"/recovery/root/twres/splash.xml
