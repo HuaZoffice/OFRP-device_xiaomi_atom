@@ -132,8 +132,8 @@
 	export OF_DEFAULT_TIMEZONE="TAIST-8;TAIDT"
 	# 跳过新版fstab处理
 	# export OF_LEGACY_PROCESS_FSTAB=1
-    #防止MIUI覆盖橙狐rec
-	export OF_PATCH_AVB20=1
+    #防止MIUI覆盖橙狐rec，实测无效
+	#export OF_PATCH_AVB20=1
 	
 	F=$(find "device" -name "atom")
 	# 修改启动画面背景色为#538db6
