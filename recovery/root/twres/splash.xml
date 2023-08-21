@@ -23,8 +23,8 @@
 
 	<pages>
 		<page name="splash">
-			<background color="#FFFFFF"/>
-			<fill color="#FFFFFF">
+			<background color="#538db6"/>
+			<fill color="#538db6">
 				<placement x="0" y="0" w="1080" h="%center_y%"/>
 			</fill>
 			<image>
