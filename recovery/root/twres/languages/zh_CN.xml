@@ -49,7 +49,7 @@
 		<string name="sdcard">SDCard</string>
 		<string name="internal">内置存储设备</string>
 		<string name="microsd">SD 卡</string>
-		<string name="usbotg">外置 U 盘</string>
+		<string name="usb_storage">外置 U 盘</string>
 		<string name="android_secure">Android Secure</string>
 		<string name="dalvik">Dalvik / ART 缓存</string>
 		<!-- This is a rarely used partition on a Micro SD card for a very old app2sd system -->
@@ -685,6 +685,7 @@
 		
 		<string name="update_btn">更新</string>
 		<string name="include_kernel_log">包括内核日志</string>
+		<string name="include_logcat">包含 Logcat 日志</string>
 		
 		<string name="fm_books">收藏夹</string>
 		<string name="fm_books_desc">长按对应项目进行编辑</string>
@@ -840,6 +841,7 @@
 		<string name="fox_internal_q1">OrangeFox - 内置存储 - 注意！</string>
 
 		<string name="copy_kernel_log">kernel 日志已复制到 {1}</string>
+		<string name="copy_logcat">logcat 日志已复制到 {1}</string>
 
 		<string name="of_run_process">等待 '{1}' 连接</string>
 		<string name="of_run_process_fail">无法完成 '{1}' 过程</string>
@@ -966,9 +968,9 @@
 		<string name="part_menu_hdr">管理分区</string>
 		<string name="run_adb_startup">启动时自动运行 ADB</string>
 
-		<!-- MMGUI -->
+		<!-- mm manager -->
 		<string name="mm_module_active">活动</string>
-		<string name="mm_module_mount">自动挂载</string>
+		<string name="mm_module_mount">跳过挂载</string>
 		<string name="mm_modules">模块</string>
 		<string name="mm_ver">Magisk 版本</string>
 		<string name="mm_mod_ver">模块版本</string>
@@ -980,6 +982,17 @@
 		<string name="magisk_not_found_2">安装预设的Magisk吗？</string>
 		<string name="magisk_not_found_3"></string>
 		
+	    <!-- APatch / KernelSU modules -->
+		<string name="ap_modules">APatch 模块</string>
+		<string name="ap_ver">APatch 版本</string>
+		<string name="ksu_modules">KernelSU 模块</string>
+		<string name="ksu_ver">KernelSU 版本</string>
+
+		<string name="modules_not_found">未发现模块!</string>
+		<string name="modules_not_found_1">模块未安装</string>
+		<string name="modules_not_found_2">或无法挂载！</string>
+		<string name="modules_not_found_3"></string>
+
 		<!-- MIUI OTA -->
 		<string name="fox_ota_settings">OTA设置</string>
 		<string name="fox_miui_ota_on">启用 OTA</string>
