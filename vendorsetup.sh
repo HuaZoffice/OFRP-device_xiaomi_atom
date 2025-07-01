@@ -15,7 +15,7 @@
 	# 设置显示在关于页面里的维护人员名称
 	export OF_MAINTAINER=Kamchoyun
 	# 设置版本号为日期
-	export FOX_VERSION=$(date +%y.%m.%d)
+	export FOX_MAINTAINER_PATCH_VERSION=$(date +%y%m%d)
 	# 当你需要标记出这个recovery是一个特殊版本时使用
 	# export FOX_VARIANT=MIUI
 
@@ -68,7 +68,7 @@
 	# 禁用检查rom里的compatibility.zip
 	export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 	# 使用zip卡刷包的方式安装橙狐后不恢复橙狐的默认设置
-	export FOX_RESET_SETTINGS=disabled
+	# export FOX_RESET_SETTINGS=disabled
 	# 删除zip包里的AromaFM（有的设备用不了）
 	export FOX_DELETE_AROMAFM=1
 
@@ -146,7 +146,7 @@
 	\cp -fp bootable/recovery/gui/theme/portrait_hdpi/splash.xml "$F"/recovery/root/twres/splash.xml
 	sed -i 's/background color="#D34E38"/background color="#538db6"/g' "$F"/recovery/root/twres/splash.xml
 	sed -i 's/fill color="#FF8038"/fill color="#538db6"/g' "$F"/recovery/root/twres/splash.xml
-   sed -i 's/OrangeFox/Kamchoyun/g' "$F"/recovery/root/twres/splash.xml
+    sed -i 's/OrangeFox/Kamchoyun/g' "$F"/recovery/root/twres/splash.xml
 	sed -i 's/font resource="of" color="#ffffff"/font resource="of" color="#538db6"/g' "$F"/recovery/root/twres/splash.xml
 	sed -i 's/font resource="recovery" color="#ffffff"/font resource="recovery" color="#538db6"/g' "$F"/recovery/root/twres/splash.xml
 	
