@@ -17,9 +17,9 @@
 #### Github，酷安，Telegram以及我的123云盘是我的官方发布以及下载通道。
 
 [![](https://img.shields.io/badge/酷安发布-OFRP-green)](http://www.coolapk.com/u/3752133)
-[![](https://img.shields.io/badge/123云盘下载-密码:LrSA-blue)](https://www.123pan.com/s/Gt2SVv-oAjGh.html)
+[![](https://img.shields.io/badge/123云盘-密码:LrSA-blue)](https://www.123pan.com/s/Gt2SVv-oAjGh.html)
 [![](https://img.shields.io/badge/GitHub发布-发行版-red)](https://github.com/HuaZoffice/OFRP-device_xiaomi_atom/releases)
-[![](https://img.shields.io/badge/Telegram频道-atom-blue)](https://t.me/Project_QiMao)
+[![](https://img.shields.io/badge/Telegram频道-atom-blue)](https://t.me/Redmi10XGlobalUpdates)
 
 ## 有用的链接
 - [OrangeFox Recovery wiki](https://wiki.orangefox.tech/en/home)
